@@ -2,7 +2,7 @@
 import { test, expect } from '../../src/fixtures/apifixtures';
 import Ajv from "ajv";
 
-let TOKEN = process.env.API_TOKEN;
+let TOKEN = process.env.GOREST_API_TOKEN;
 let AUTH_HEADER = { Authorization: `Bearer ${TOKEN}` };
 
 //setup the AJV

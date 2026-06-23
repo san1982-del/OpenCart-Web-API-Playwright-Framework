@@ -1,0 +1,4 @@
+execution,searchkey,productname,brand,productcode,rewardpoints,availability,price,extax
+yes,macbook,MacBook,Apple,Product 16,600,Out Of Stock,$602.00,$500.00
+no,macbook,MacBook Air,Apple,Product 17,700,Out Of Stock,"$1,202.00","$1,000.00"
+no,macbook,MacBook Pro,Apple,Product 18,800,Out Of Stock,"$2,000.00","$2,000.00"

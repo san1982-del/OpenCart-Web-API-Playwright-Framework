@@ -1,0 +1,15 @@
+
+import fs from "fs";
+import { parse } from 'csv-parse/sync';
+
+export class csvHelper {
+    static readCsv(filePath: string): Record<string, string>[] {
+        const records = parse(fs.readFileSync(filePath, "utf-8"), {
+            columns: true,
+            skip_empty_lines: true,
+            trim: true,
+        }) as Record<string, string>[];
+        
+        return records.filter(row => row.execution?.toLowerCase() == 'yes');
+    }
+}

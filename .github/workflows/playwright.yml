@@ -36,6 +36,9 @@ jobs:
           APPPASSWORD: ${{ secrets.APPPASSWORD }}
           API_BASE_URL: ${{ secrets.API_BASE_URL }}
           GOREST_API_TOKEN: ${{ secrets.GOREST_API_TOKEN }}
+          OAUTH_CLIENT_ID: ${{secrets.OAUTH_CLIENT_ID}}
+          OAUTH_CLIENT_SECRET: ${{OAUTH_CLIENT_SECRET}}
+          GRANT_TYPE: ${{GRANT_TYPE}}
 
       - name: Upload HTML Report
         if: always()

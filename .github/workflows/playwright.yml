@@ -35,7 +35,7 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
           API_BASE_URL: ${{ secrets.API_BASE_URL }}
-          API_TOKEN: ${{ secrets.API_TOKEN }}
+          GOREST_API_TOKEN: ${{ secrets.GOREST_API_TOKEN }}
 
       - name: Upload HTML Report
         if: always()

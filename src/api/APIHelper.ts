@@ -11,11 +11,12 @@ export class APIHelper {
 
 
     //GET
-    async get(endPoint: string, headers?: Record<string, string>) {
-        let response = await this.request.get(`${this.baseURL}${endPoint}`, { 
-            headers: headers 
+    async get(endPoint: string, headers?: Record<string, string>, params?: Record<string, string>) {
+        let response = await this.request.get(`${this.baseURL}${endPoint}`, {
+            headers: headers,
+            params:params
         });
-       // console.log(response)
+        // console.log(response)
         return {
             status: response.status(),
             body: await response.json()
@@ -35,11 +36,14 @@ export class APIHelper {
     }
 
     //PUT
-        async put(endPoint: string, data: object, headers?: Record<string, string>) {
+    async put(endPoint: string, data: object, headers?: Record<string, string>) {
         let response = await this.request.put(`${this.baseURL}${endPoint}`, {
             data: data,
             headers: headers
         });
+
+        
+
         return {
             status: response.status(),
             body: await response.json()
@@ -47,12 +51,12 @@ export class APIHelper {
     }
 
     //Delete
-        async delete(endPoint: string, headers?: Record<string, string>) {
+    async delete(endPoint: string, headers?: Record<string, string>) {
         let response = await this.request.delete(`${this.baseURL}${endPoint}`, {
             headers: headers
         });
         return {
-            status: response.status()  
+            status: response.status()
         }
     }
 }

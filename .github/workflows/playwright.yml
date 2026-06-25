@@ -20,12 +20,25 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
+          cache: 'npm'
+      
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies
         run: npm ci
 
       - name: Install Playwright browsers
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps chromium
+
+      - name: Install Playwright OS deps only (if cached)
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium  
 
       - name: Run tests
         run: npx playwright test --project=chromium
@@ -36,9 +49,9 @@ jobs:
           APPPASSWORD: ${{ secrets.APPPASSWORD }}
           API_BASE_URL: ${{ secrets.API_BASE_URL }}
           GOREST_API_TOKEN: ${{ secrets.GOREST_API_TOKEN }}
-          OAUTH_CLIENT_ID: ${{secrets.OAUTH_CLIENT_ID}}
-          OAUTH_CLIENT_SECRET: ${{secrets.OAUTH_CLIENT_SECRET}}
-          GRANT_TYPE: ${{secrets.GRANT_TYPE}}
+          OAUTH_CLIENT_ID: ${{ secrets.OAUTH_CLIENT_ID }}
+          OAUTH_CLIENT_SECRET: ${{ secrets.OAUTH_CLIENT_SECRET }}
+          GRANT_TYPE: ${{ secrets.GRANT_TYPE }}
 
       - name: Upload HTML Report
         if: always()

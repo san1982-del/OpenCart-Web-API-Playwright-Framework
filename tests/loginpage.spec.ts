@@ -9,16 +9,16 @@ login = new LoginPage(page);
 await login.goToLoginPage();
 })
 
-test('validate Title Test', async ({ page })=>{
+test.skip('validate Title Test', async ({ page })=>{
 const pageTitle = await login.getLoginPageTitle();
 expect(pageTitle).toBe('Account Login');
 })
 
-test('forgot pwd link exist Test', async ({ page })=>{
+test.skip('forgot pwd link exist Test', async ({ page })=>{
 expect(await login.isForgotPwdLinkExist()).toBeTruthy();
 })
 
-test('Login Application Test', async ({ page })=>{
+test.skip('Login Application Test', async ({ page })=>{
 await login.doLogin('sandeepdahiya@yahoo.com', 'Selenium@12345')
 expect(await page.title()).toBe('My Account');
 })

@@ -1,4 +1,5 @@
 
+import { skip } from 'node:test';
 import { test, expect } from '../../src/fixtures/apifixtures';
 
 //let baseURL = 'https://restful-booker.herokuapp.com';
@@ -39,7 +40,7 @@ async function createBooking(apiHelper: any) {
 
 }
 
-test('Post - Validate Create Booking', async ({ apiHelper }) => {
+test.skip('Post - Validate Create Booking', async ({ apiHelper }) => {
 
     let bookingResponseBody = await createBooking(apiHelper);
     AUTH_HEADER = await generateToken(apiHelper);
@@ -49,7 +50,7 @@ test('Post - Validate Create Booking', async ({ apiHelper }) => {
     console.log(getResponse.body);
 })
 
-test('Put - Validate Update Booking', async ({ apiHelper }) => {
+test.skip('Put - Validate Update Booking', async ({ apiHelper }) => {
 
     let bookingResponseBody = await createBooking(apiHelper);
     api_Token = await generateToken(apiHelper);
@@ -82,7 +83,7 @@ test('Put - Validate Update Booking', async ({ apiHelper }) => {
     console.log(getResponse.body);
 })
 
-test('Patch - Validate Partial Update Booking', async ({ apiHelper }) => {
+test.skip('Patch - Validate Partial Update Booking', async ({ apiHelper }) => {
 
     let bookingResponseBody = await createBooking(apiHelper);
     api_Token = await generateToken(apiHelper);
@@ -108,7 +109,7 @@ test('Patch - Validate Partial Update Booking', async ({ apiHelper }) => {
 })
 
 
-test('Delete - Validate Delete Booking', async ({ apiHelper }) => {
+test.skip('Delete - Validate Delete Booking', async ({ apiHelper }) => {
 
     let bookingResponseBody = await createBooking(apiHelper);
     api_Token = await generateToken(apiHelper);

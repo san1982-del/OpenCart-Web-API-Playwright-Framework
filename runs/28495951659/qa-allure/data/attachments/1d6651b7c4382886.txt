@@ -1,0 +1,2 @@
+User Credentials: sandeepdahiya@yahoo.com : Selenium@12345
+Home page headers :  [ 'My Account', 'My Orders', 'My Affiliate Account', 'Newsletter' ]

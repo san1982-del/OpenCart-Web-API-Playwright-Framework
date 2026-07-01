@@ -1,0 +1,16 @@
+User Credentials: sandeepdahiya@yahoo.com : Selenium@12345
+Search Key: macbook
+[
+  'Brand: Apple',
+  'Product Code: Product 16',
+  'Reward Points: 600',
+  'Availability: Out Of Stock'
+]
+Map(6) {
+  'Brand' => 'Apple',
+  'Product Code' => 'Product 16',
+  'Reward Points' => '600',
+  'Availability' => 'Out Of Stock',
+  'Price Key' => '$602.00',
+  'Ex Tax' => '$500.00'
+}

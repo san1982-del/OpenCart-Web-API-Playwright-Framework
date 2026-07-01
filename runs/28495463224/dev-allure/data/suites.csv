@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1367","POST API - Create a User","chromium","2026-07-01","passed","2026-07-01","@smoke running E2E crud","api/users.api.sep.spec.ts","",""
+"","393","@smoke PUT API - Update a User","chromium","2026-07-01","passed","2026-07-01","@smoke running E2E crud","api/users.api.sep.spec.ts","",""
+"","404","@smoke Delete API - Delete a User","chromium","2026-07-01","passed","2026-07-01","@smoke running E2E crud","api/users.api.sep.spec.ts","",""

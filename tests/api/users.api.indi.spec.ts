@@ -20,7 +20,7 @@ async function createUser(apiHelper: any) {
 
 //Test - Create a user - POST-GET
 //POST -> userID -> GET/userID-verify
-test('POST - create a user', async ({ apiHelper }) => {
+test('@sanity POST - create a user', async ({ apiHelper }) => {
 
     let userResponse = await createUser(apiHelper);
     let userID = userResponse.id;
@@ -32,7 +32,7 @@ test('POST - create a user', async ({ apiHelper }) => {
 
 //Test2: Update a user
 ////POST -> userID -> PUT -> GET/userID-verify
-test('PUT - Update a user', async ({ apiHelper }) => {
+test('@sanity PUT - Update a user', async ({ apiHelper }) => {
 
         let UpdatedUserData = {
         name: 'Tom Cruise',

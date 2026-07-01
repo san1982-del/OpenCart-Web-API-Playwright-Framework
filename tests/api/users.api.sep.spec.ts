@@ -16,7 +16,7 @@ test('GET API - get all users', async ({ apiHelper }) => {
 
 })
 
-test.describe.serial('running E2E crud', ()=>{
+test.describe.serial('@smoke running E2E crud', ()=>{
     test('POST API - Create a User', async ({ apiHelper }) => {
     let userData = {
         name: 'Tom',
@@ -32,7 +32,7 @@ test.describe.serial('running E2E crud', ()=>{
     console.log('Created User ID: ', userID);
 })
 
-test('PUT API - Update a User', async ({ apiHelper }) => {
+test('@smoke PUT API - Update a User', async ({ apiHelper }) => {
     let userData = {
         status: 'inactive'
     }
@@ -43,7 +43,7 @@ test('PUT API - Update a User', async ({ apiHelper }) => {
     console.log('updated status: ', response.status);
 })
 
-test('Delete API - Delete a User', async ({ apiHelper }) => {
+test('@smoke Delete API - Delete a User', async ({ apiHelper }) => {
     let userData = {
         status: 'inactive'
     }

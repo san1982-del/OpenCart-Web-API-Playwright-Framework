@@ -1,0 +1,36 @@
+APIResponse: 200 OK
+  Date: Wed, 01 Jul 2026 04:28:55 GMT
+  Content-Type: application/json; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-N+Q88F+m1C2EUUcN1JiHdw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Etag: W/"3c116d95dbaad3ccee66d2d2207dc02e"
+  Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+  Vary: Origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+  X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+  X-Links-Previous: 
+  X-Pagination-Limit: 10
+  X-Pagination-Page: 1
+  X-Pagination-Pages: 302
+  X-Pagination-Total: 3017
+  X-Permitted-Cross-Domain-Policies: none
+  X-Ratelimit-Limit: 300
+  X-Ratelimit-Remaining: 299
+  X-Ratelimit-Reset: 0
+  X-Request-Id: 647d0619-1534-4f70-b4d9-aa279069af0a
+  X-Runtime: 0.128274
+  X-Xss-Protection: 0
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  Cf-Cache-Status: DYNAMIC
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9oxywQYoxUYUzvRZC2%2FRGJt362Z362GqeCKWJNVX8YuLsxMOd0RFysvHvp%2Bxi09nM45PMmOHJctnSC3Sp7HYCO3GnADIMkP20dRPVOYGHeh7yupMCVZ4Rfp7YZgTEUQ%3D"}]}
+  Content-Encoding: br
+  Server: cloudflare
+  CF-RAY: a142aaaa985e586e-IAD
+  alt-svc: h3=":443"; ma=86400
+true

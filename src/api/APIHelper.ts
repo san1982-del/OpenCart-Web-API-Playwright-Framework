@@ -27,7 +27,7 @@ export class APIHelper {
             body = await response.text();
         }
 
-            console.log(response)
+           // console.log(response)
             return {
                 status: response.status(),
                 body
@@ -53,7 +53,7 @@ export class APIHelper {
             headers: headers
         });
 
-        console.log(response);
+        //console.log(response);
 
         return {
             status: response.status(),
@@ -68,7 +68,7 @@ export class APIHelper {
             headers: headers
         });
 
-        console.log(response);
+        //console.log(response);
 
         return {
             status: response.status(),
@@ -82,7 +82,7 @@ export class APIHelper {
         let response = await this.request.delete(`${this.baseURL}${endPoint}`, {
             headers: headers
         });
-             console.log(response);
+             //console.log(response);
 
         return {
             status: response.status()
